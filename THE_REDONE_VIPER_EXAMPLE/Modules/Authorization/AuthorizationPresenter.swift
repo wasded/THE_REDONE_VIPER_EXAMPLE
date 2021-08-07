@@ -104,9 +104,12 @@ extension AuthorizationPresenter: AuthorizationPresenterOutputProtocol {
         self.view.setLoginState(state)
     }
     
-    func authorizationDidSuccess(userLogin: String) {
+    func authorizationDidSuccess() {
         DispatchQueue.main.async {
+            let inputModel = DashboardInputModel(login: self.loginInput)
+            
             self.view.removeActivity(animated: true)
+            self.router.showDashboardModel(inputModel: inputModel)
         }
     }
     

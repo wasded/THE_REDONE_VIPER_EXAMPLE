@@ -87,7 +87,7 @@ extension AuthorizationInteractor: AuthorizationInteractorProtocol {
             switch result {
             case .success:
                 self.credentialStorage.removeAllCredential()
-                self.presenter.authorizationDidSuccess(userLogin: login)
+                self.presenter.authorizationDidSuccess()
             case .failure(let error):
                 self.presenter.authorizationDidFailed(with: error)
             }

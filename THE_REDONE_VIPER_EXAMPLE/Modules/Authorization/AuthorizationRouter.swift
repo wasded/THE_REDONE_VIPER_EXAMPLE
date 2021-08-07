@@ -22,7 +22,12 @@ class AuthorizationRouter {
 
 // MARK: - AuthorizationRouterProtocol
 extension AuthorizationRouter: AuthorizationRouterProtocol {
-    func showMainModule() {
+    func showDashboardModel(inputModel: DashboardInputModel) {
+        let configurator = DashboardConfigurator()
+        
+        let viewController = configurator.configure(inputModel: inputModel)
+        
+        self.view.set([viewController], animated: true)
     }
     
     func showAlert(title: String?, message: String?, actions: [UIAlertAction]) {

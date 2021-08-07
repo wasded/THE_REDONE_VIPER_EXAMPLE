@@ -29,7 +29,7 @@ protocol AuthorizationPresenterInputProtocol: Presenter {
 protocol AuthorizationPresenterOutputProtocol: AnyObject {
     func passwordStateDidChanged(_ state: AuthorizationTextFieldState)
     func loginStateDidChanged(_ state: AuthorizationTextFieldState)
-    func authorizationDidSuccess(userLogin: String)
+    func authorizationDidSuccess()
     func authorizationDidFailed(with error: Error)
     func fetchStoredDataFinished(login: String, password: String)
 }
@@ -42,5 +42,5 @@ protocol AuthorizationInteractorProtocol: AnyObject {
 }
 
 protocol AuthorizationRouterProtocol: Router {
-    func showMainModule()
+    func showDashboardModel(inputModel: DashboardInputModel)
 }

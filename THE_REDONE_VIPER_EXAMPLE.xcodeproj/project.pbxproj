@@ -33,6 +33,14 @@
 		72514F0F26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0D26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift */; };
 		72514F1026BE866F007FE08A /* AuthorizationCredentialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0E26BE866F007FE08A /* AuthorizationCredentialStorage.swift */; };
 		72514F1226BE8851007FE08A /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1126BE8851007FE08A /* AuthorizationRouter.swift */; };
+		72514F1E26BE89A2007FE08A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1526BE89A2007FE08A /* DashboardView.swift */; };
+		72514F1F26BE89A2007FE08A /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1626BE89A2007FE08A /* DashboardInteractor.swift */; };
+		72514F2026BE89A2007FE08A /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1726BE89A2007FE08A /* DashboardPresenter.swift */; };
+		72514F2126BE89A2007FE08A /* DashboardInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1926BE89A2007FE08A /* DashboardInputModel.swift */; };
+		72514F2226BE89A2007FE08A /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1A26BE89A2007FE08A /* DashboardProtocols.swift */; };
+		72514F2326BE89A2007FE08A /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1B26BE89A2007FE08A /* DashboardRouter.swift */; };
+		72514F2426BE89A2007FE08A /* DashboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F1C26BE89A2007FE08A /* DashboardConfigurator.swift */; };
+		72514F2526BE89A2007FE08A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72514F1D26BE89A2007FE08A /* Dashboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +72,14 @@
 		72514F0D26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAuthorizationCredentialStorage.swift; sourceTree = "<group>"; };
 		72514F0E26BE866F007FE08A /* AuthorizationCredentialStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCredentialStorage.swift; sourceTree = "<group>"; };
 		72514F1126BE8851007FE08A /* AuthorizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		72514F1526BE89A2007FE08A /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		72514F1626BE89A2007FE08A /* DashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		72514F1726BE89A2007FE08A /* DashboardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		72514F1926BE89A2007FE08A /* DashboardInputModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardInputModel.swift; sourceTree = "<group>"; };
+		72514F1A26BE89A2007FE08A /* DashboardProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardProtocols.swift; sourceTree = "<group>"; };
+		72514F1B26BE89A2007FE08A /* DashboardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		72514F1C26BE89A2007FE08A /* DashboardConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardConfigurator.swift; sourceTree = "<group>"; };
+		72514F1D26BE89A2007FE08A /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				72514EEC26BE82C1007FE08A /* Authorization */,
+				72514F1426BE89A2007FE08A /* Dashboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -231,6 +248,29 @@
 			path = AuthorizationCredentialStorage;
 			sourceTree = "<group>";
 		};
+		72514F1426BE89A2007FE08A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				72514F1826BE89A2007FE08A /* Models */,
+				72514F1A26BE89A2007FE08A /* DashboardProtocols.swift */,
+				72514F1C26BE89A2007FE08A /* DashboardConfigurator.swift */,
+				72514F1526BE89A2007FE08A /* DashboardView.swift */,
+				72514F1626BE89A2007FE08A /* DashboardInteractor.swift */,
+				72514F1726BE89A2007FE08A /* DashboardPresenter.swift */,
+				72514F1B26BE89A2007FE08A /* DashboardRouter.swift */,
+				72514F1D26BE89A2007FE08A /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		72514F1826BE89A2007FE08A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72514F1926BE89A2007FE08A /* DashboardInputModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72514EFD26BE846A007FE08A /* Authorization.storyboard in Resources */,
+				72514F2526BE89A2007FE08A /* Dashboard.storyboard in Resources */,
 				72514EE326BE81AD007FE08A /* LoadingView.xib in Resources */,
 				72514ED126BE80AD007FE08A /* LaunchScreen.storyboard in Resources */,
 				72514ECE26BE80AD007FE08A /* Assets.xcassets in Resources */,
@@ -313,17 +354,24 @@
 				72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */,
 				72514EE826BE81E6007FE08A /* Router.swift in Sources */,
 				72514EC526BE80AB007FE08A /* AppDelegate.swift in Sources */,
+				72514F2026BE89A2007FE08A /* DashboardPresenter.swift in Sources */,
 				72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */,
 				72514EFF26BE8554007FE08A /* AuthorizationPresenter.swift in Sources */,
 				72514F0A26BE8667007FE08A /* Validator.swift in Sources */,
 				72514F0826BE8667007FE08A /* DefaultSessionManager.swift in Sources */,
 				72514EE926BE81E6007FE08A /* Viewable.swift in Sources */,
+				72514F2326BE89A2007FE08A /* DashboardRouter.swift in Sources */,
 				72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */,
+				72514F2126BE89A2007FE08A /* DashboardInputModel.swift in Sources */,
 				72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */,
+				72514F2226BE89A2007FE08A /* DashboardProtocols.swift in Sources */,
+				72514F2426BE89A2007FE08A /* DashboardConfigurator.swift in Sources */,
 				72514EC726BE80AB007FE08A /* SceneDelegate.swift in Sources */,
+				72514F1E26BE89A2007FE08A /* DashboardView.swift in Sources */,
 				72514F0B26BE8667007FE08A /* DefaultValidator.swift in Sources */,
 				72514EF726BE83C8007FE08A /* AuthorizationView.swift in Sources */,
 				72514F0926BE8667007FE08A /* SessionManager.swift in Sources */,
+				72514F1F26BE89A2007FE08A /* DashboardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
