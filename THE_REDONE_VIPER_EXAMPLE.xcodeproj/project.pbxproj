@@ -24,6 +24,7 @@
 		72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF826BE83FF007FE08A /* UIStoryboard+Names.swift */; };
 		72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */; };
 		72514EFD26BE846A007FE08A /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72514EFC26BE846A007FE08A /* Authorization.storyboard */; };
+		72514EFF26BE8554007FE08A /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		72514EF826BE83FF007FE08A /* UIStoryboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Names.swift"; sourceTree = "<group>"; };
 		72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+AdditionalsInstantiate.swift"; sourceTree = "<group>"; };
 		72514EFC26BE846A007FE08A /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */,
 				72514EF426BE83BE007FE08A /* AuthorizationConfigurator.swift */,
 				72514EF626BE83C8007FE08A /* AuthorizationView.swift */,
+				72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */,
 				72514EFC26BE846A007FE08A /* Authorization.storyboard */,
 			);
 			path = Authorization;
@@ -259,6 +262,7 @@
 				72514EE826BE81E6007FE08A /* Router.swift in Sources */,
 				72514EC526BE80AB007FE08A /* AppDelegate.swift in Sources */,
 				72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */,
+				72514EFF26BE8554007FE08A /* AuthorizationPresenter.swift in Sources */,
 				72514EE926BE81E6007FE08A /* Viewable.swift in Sources */,
 				72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */,
 				72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */,

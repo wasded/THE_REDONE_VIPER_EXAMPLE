@@ -21,6 +21,9 @@ class AuthorizationConfigurator {
 extension AuthorizationConfigurator: AuthorizationConfiguratorProtocol {
     func configure() -> UIViewController {
         let view = AuthorizationView.instantiate()
+        let presenter = AuthorizationPresenter(view: view)
+        
+        view.presenter = presenter
         
         return view
     }
