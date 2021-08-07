@@ -17,6 +17,8 @@
 		72514EE826BE81E6007FE08A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EE526BE81E6007FE08A /* Router.swift */; };
 		72514EE926BE81E6007FE08A /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EE626BE81E6007FE08A /* Viewable.swift */; };
 		72514EEA26BE81E6007FE08A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EE726BE81E6007FE08A /* Presenter.swift */; };
+		72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */; };
+		72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		72514EE526BE81E6007FE08A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		72514EE626BE81E6007FE08A /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		72514EE726BE81E6007FE08A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationProtocols.swift; sourceTree = "<group>"; };
+		72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTextFieldState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		72514EDC26BE812C007FE08A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				72514EEC26BE82C1007FE08A /* Authorization */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -141,6 +146,23 @@
 			children = (
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		72514EEC26BE82C1007FE08A /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				72514EEF26BE82F6007FE08A /* Models */,
+				72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		72514EEF26BE82F6007FE08A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +240,9 @@
 				72514EE426BE81AD007FE08A /* LoadingView.swift in Sources */,
 				72514EE826BE81E6007FE08A /* Router.swift in Sources */,
 				72514EC526BE80AB007FE08A /* AppDelegate.swift in Sources */,
+				72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */,
 				72514EE926BE81E6007FE08A /* Viewable.swift in Sources */,
+				72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */,
 				72514EC726BE80AB007FE08A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
