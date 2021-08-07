@@ -30,9 +30,11 @@ extension AuthorizationConfigurator: AuthorizationConfiguratorProtocol {
                                                  credentialStorage: credentialStorage,
                                                  sessionManager: sessionManager,
                                                  validator: validator)
+        let router = AuthorizationRouter(view: view)
         
         view.presenter = presenter
         presenter.interactor = interactor
+        presenter.router = router
         
         return view
     }
