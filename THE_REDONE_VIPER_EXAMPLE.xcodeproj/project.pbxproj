@@ -19,6 +19,11 @@
 		72514EEA26BE81E6007FE08A /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EE726BE81E6007FE08A /* Presenter.swift */; };
 		72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */; };
 		72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */; };
+		72514EF526BE83BE007FE08A /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF426BE83BE007FE08A /* AuthorizationConfigurator.swift */; };
+		72514EF726BE83C8007FE08A /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF626BE83C8007FE08A /* AuthorizationView.swift */; };
+		72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EF826BE83FF007FE08A /* UIStoryboard+Names.swift */; };
+		72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */; };
+		72514EFD26BE846A007FE08A /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72514EFC26BE846A007FE08A /* Authorization.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		72514EE726BE81E6007FE08A /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationProtocols.swift; sourceTree = "<group>"; };
 		72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTextFieldState.swift; sourceTree = "<group>"; };
+		72514EF426BE83BE007FE08A /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
+		72514EF626BE83C8007FE08A /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		72514EF826BE83FF007FE08A /* UIStoryboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Names.swift"; sourceTree = "<group>"; };
+		72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+AdditionalsInstantiate.swift"; sourceTree = "<group>"; };
+		72514EFC26BE846A007FE08A /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,8 @@
 		72514ED926BE8105007FE08A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				72514EF826BE83FF007FE08A /* UIStoryboard+Names.swift */,
+				72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +165,9 @@
 			children = (
 				72514EEF26BE82F6007FE08A /* Models */,
 				72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */,
+				72514EF426BE83BE007FE08A /* AuthorizationConfigurator.swift */,
+				72514EF626BE83C8007FE08A /* AuthorizationView.swift */,
+				72514EFC26BE846A007FE08A /* Authorization.storyboard */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -222,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72514EFD26BE846A007FE08A /* Authorization.storyboard in Resources */,
 				72514EE326BE81AD007FE08A /* LoadingView.xib in Resources */,
 				72514ED126BE80AD007FE08A /* LaunchScreen.storyboard in Resources */,
 				72514ECE26BE80AD007FE08A /* Assets.xcassets in Resources */,
@@ -237,13 +253,17 @@
 			files = (
 				72514EE226BE81AD007FE08A /* LoadableView.swift in Sources */,
 				72514EEA26BE81E6007FE08A /* Presenter.swift in Sources */,
+				72514EF526BE83BE007FE08A /* AuthorizationConfigurator.swift in Sources */,
 				72514EE426BE81AD007FE08A /* LoadingView.swift in Sources */,
+				72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */,
 				72514EE826BE81E6007FE08A /* Router.swift in Sources */,
 				72514EC526BE80AB007FE08A /* AppDelegate.swift in Sources */,
 				72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */,
 				72514EE926BE81E6007FE08A /* Viewable.swift in Sources */,
 				72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */,
+				72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */,
 				72514EC726BE80AB007FE08A /* SceneDelegate.swift in Sources */,
+				72514EF726BE83C8007FE08A /* AuthorizationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
