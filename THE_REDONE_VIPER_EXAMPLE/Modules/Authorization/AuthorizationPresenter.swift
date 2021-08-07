@@ -53,6 +53,7 @@ class AuthorizationPresenter {
 // MARK: - AuthorizationPresenterInputProtocol
 extension AuthorizationPresenter: AuthorizationPresenterInputProtocol {
     func viewDidLoad() {
+        self.interactor.fetchStoredData()
     }
     
     func viewWillAppear() { }
@@ -66,17 +67,23 @@ extension AuthorizationPresenter: AuthorizationPresenterInputProtocol {
     func passwordInputDidChanged(_ password: String) {
         self.passwordInput = password
         
+        self.interactor.passwordDidChanged(password)
+        
         self.view.setPassword(password)
     }
     
     func loginInputDidChanged(_ login: String) {
         self.loginInput = login
         
+        self.interactor.loginDidChanged(login)
+        
         self.view.setLogin(login)
     }
     
     func signInDidTap() {
         self.view.addActivity()
+        
+        self.interactor.signIn(login: self.loginInput, password: self.passwordInput)
     }
 }
 
@@ -98,6 +105,9 @@ extension AuthorizationPresenter: AuthorizationPresenterOutputProtocol {
     }
     
     func authorizationDidSuccess(userLogin: String) {
+        DispatchQueue.main.async {
+            self.view.removeActivity(animated: true)
+        }
     }
     
     func authorizationDidFailed(with error: Error) {

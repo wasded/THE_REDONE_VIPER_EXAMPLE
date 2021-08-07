@@ -20,10 +20,19 @@ class AuthorizationConfigurator {
 // MARK: - AuthorizationConfiguratorProtocol
 extension AuthorizationConfigurator: AuthorizationConfiguratorProtocol {
     func configure() -> UIViewController {
+        let credentialStorage = DefaultAuthorizationCredentialStorage()
+        let sessionManager = DefaultSessionManager()
+        let validator = DefaultValidator()
+        
         let view = AuthorizationView.instantiate()
         let presenter = AuthorizationPresenter(view: view)
+        let interactor = AuthorizationInteractor(presenter: presenter,
+                                                 credentialStorage: credentialStorage,
+                                                 sessionManager: sessionManager,
+                                                 validator: validator)
         
         view.presenter = presenter
+        presenter.interactor = interactor
         
         return view
     }

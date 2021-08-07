@@ -25,6 +25,13 @@
 		72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */; };
 		72514EFD26BE846A007FE08A /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72514EFC26BE846A007FE08A /* Authorization.storyboard */; };
 		72514EFF26BE8554007FE08A /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */; };
+		72514F0126BE8630007FE08A /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0026BE8630007FE08A /* AuthorizationInteractor.swift */; };
+		72514F0826BE8667007FE08A /* DefaultSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0326BE8667007FE08A /* DefaultSessionManager.swift */; };
+		72514F0926BE8667007FE08A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0426BE8667007FE08A /* SessionManager.swift */; };
+		72514F0A26BE8667007FE08A /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0626BE8667007FE08A /* Validator.swift */; };
+		72514F0B26BE8667007FE08A /* DefaultValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0726BE8667007FE08A /* DefaultValidator.swift */; };
+		72514F0F26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0D26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift */; };
+		72514F1026BE866F007FE08A /* AuthorizationCredentialStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72514F0E26BE866F007FE08A /* AuthorizationCredentialStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		72514EFA26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+AdditionalsInstantiate.swift"; sourceTree = "<group>"; };
 		72514EFC26BE846A007FE08A /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
 		72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		72514F0026BE8630007FE08A /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		72514F0326BE8667007FE08A /* DefaultSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSessionManager.swift; sourceTree = "<group>"; };
+		72514F0426BE8667007FE08A /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		72514F0626BE8667007FE08A /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		72514F0726BE8667007FE08A /* DefaultValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultValidator.swift; sourceTree = "<group>"; };
+		72514F0D26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAuthorizationCredentialStorage.swift; sourceTree = "<group>"; };
+		72514F0E26BE866F007FE08A /* AuthorizationCredentialStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationCredentialStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +172,8 @@
 		72514EEB26BE828B007FE08A /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				72514F0226BE8667007FE08A /* SessionManager */,
+				72514F0526BE8667007FE08A /* Validator */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -165,11 +181,13 @@
 		72514EEC26BE82C1007FE08A /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				72514F0C26BE866F007FE08A /* AuthorizationCredentialStorage */,
 				72514EEF26BE82F6007FE08A /* Models */,
 				72514EED26BE82E7007FE08A /* AuthorizationProtocols.swift */,
 				72514EF426BE83BE007FE08A /* AuthorizationConfigurator.swift */,
 				72514EF626BE83C8007FE08A /* AuthorizationView.swift */,
 				72514EFE26BE8554007FE08A /* AuthorizationPresenter.swift */,
+				72514F0026BE8630007FE08A /* AuthorizationInteractor.swift */,
 				72514EFC26BE846A007FE08A /* Authorization.storyboard */,
 			);
 			path = Authorization;
@@ -181,6 +199,33 @@
 				72514EF026BE8307007FE08A /* AuthorizationTextFieldState.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		72514F0226BE8667007FE08A /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				72514F0326BE8667007FE08A /* DefaultSessionManager.swift */,
+				72514F0426BE8667007FE08A /* SessionManager.swift */,
+			);
+			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		72514F0526BE8667007FE08A /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				72514F0626BE8667007FE08A /* Validator.swift */,
+				72514F0726BE8667007FE08A /* DefaultValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		72514F0C26BE866F007FE08A /* AuthorizationCredentialStorage */ = {
+			isa = PBXGroup;
+			children = (
+				72514F0D26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift */,
+				72514F0E26BE866F007FE08A /* AuthorizationCredentialStorage.swift */,
+			);
+			path = AuthorizationCredentialStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +301,9 @@
 			files = (
 				72514EE226BE81AD007FE08A /* LoadableView.swift in Sources */,
 				72514EEA26BE81E6007FE08A /* Presenter.swift in Sources */,
+				72514F0F26BE866F007FE08A /* DefaultAuthorizationCredentialStorage.swift in Sources */,
+				72514F0126BE8630007FE08A /* AuthorizationInteractor.swift in Sources */,
+				72514F1026BE866F007FE08A /* AuthorizationCredentialStorage.swift in Sources */,
 				72514EF526BE83BE007FE08A /* AuthorizationConfigurator.swift in Sources */,
 				72514EE426BE81AD007FE08A /* LoadingView.swift in Sources */,
 				72514EFB26BE8413007FE08A /* UIStoryboard+AdditionalsInstantiate.swift in Sources */,
@@ -263,11 +311,15 @@
 				72514EC526BE80AB007FE08A /* AppDelegate.swift in Sources */,
 				72514EEE26BE82E7007FE08A /* AuthorizationProtocols.swift in Sources */,
 				72514EFF26BE8554007FE08A /* AuthorizationPresenter.swift in Sources */,
+				72514F0A26BE8667007FE08A /* Validator.swift in Sources */,
+				72514F0826BE8667007FE08A /* DefaultSessionManager.swift in Sources */,
 				72514EE926BE81E6007FE08A /* Viewable.swift in Sources */,
 				72514EF126BE8307007FE08A /* AuthorizationTextFieldState.swift in Sources */,
 				72514EF926BE83FF007FE08A /* UIStoryboard+Names.swift in Sources */,
 				72514EC726BE80AB007FE08A /* SceneDelegate.swift in Sources */,
+				72514F0B26BE8667007FE08A /* DefaultValidator.swift in Sources */,
 				72514EF726BE83C8007FE08A /* AuthorizationView.swift in Sources */,
+				72514F0926BE8667007FE08A /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
